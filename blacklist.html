@@ -60,31 +60,31 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="http://api.ml.ensemplix.ru/">Ensemplix API</a>
+    <a class="navbar-brand" href="http://api.ml.ensemplix.ru/">Ensemplix info [ML]</a>
   </div>
   
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
       <li class="dropdown">
-        <a href="https://ensemplix.ru" target="_blank" class="dropdown-toggle" data-toggle="dropdown">Сайт <b class="caret"></b></a>
+        <a href="https://ensemplix.ru" target="_blank" class="dropdown-toggle" data-toggle="dropdown">РЎР°Р№С‚ <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="https://ensemplix.ru" target="_blank">Главная страница</a></li>
+          <li><a href="https://ensemplix.ru" target="_blank">Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р°</a></li>
           <li class="divider"></li>
-          <li><a href="https://ensemplix.ru/articles/view/1/" target="_blank">Правила сервера</a></li>
-          <li><a href="https://ensemplix.ru/articles/view/6/" target="_blank">Команды сервера</a></li>
-          <li><a href="https://ensemplix.ru/articles/view/3/" target="_blank">Защита территории</a></li>
+          <li><a href="https://ensemplix.ru/articles/view/1/" target="_blank">РџСЂР°РІРёР»Р° СЃРµСЂРІРµСЂР°</a></li>
+          <li><a href="https://ensemplix.ru/articles/view/6/" target="_blank">РљРѕРјР°РЅРґС‹ СЃРµСЂРІРµСЂР°</a></li>
+          <li><a href="https://ensemplix.ru/articles/view/3/" target="_blank">Р—Р°С‰РёС‚Р° С‚РµСЂСЂРёС‚РѕСЂРёРё</a></li>
           <li class="divider"></li>
-          <li><a href="https://ensemplix.ru/banlist" target="_blank">Банлист</a></li>
+          <li><a href="https://ensemplix.ru/banlist" target="_blank">Р‘Р°РЅР»РёСЃС‚</a></li>
         </ul>
       </li>
-      <li><a href="mc-color-chat.html">Цветной чат</a></li>
-      <li><a href="blacklist.html">Блеклист</a></li>
+      <li><a href="mc-color-chat.html">Р¦РІРµС‚РЅРѕР№ С‡Р°С‚</a></li>
+      <li><a href="blacklist.html">Р‘Р»РµРєР»РёСЃС‚</a></li>
     </ul>
     
   </div>
 </nav>
 
-<h2>Блеклист <small id="blacklist_progress">...</small></h2>
+<h2>Р‘Р»РµРєР»РёСЃС‚ <small id="blacklist_progress">...</small></h2>
 
 <div id="blacklist_list"></div>
 
@@ -101,7 +101,7 @@
 var db = {};
 
 $(document).ready(function() {
-  $('#blacklist_progress').text('Загрузка...');
+  $('#blacklist_progress').text('Р—Р°РіСЂСѓР·РєР°...');
   
   $.ajax({
     url: "http://api.ensemplix.ru/v2/server/blacklist/",
