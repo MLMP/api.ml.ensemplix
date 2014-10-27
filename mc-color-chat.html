@@ -46,37 +46,37 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="http://api.ml.ensemplix.ru/">Ensemplix API</a>
+    <a class="navbar-brand" href="http://api.ml.ensemplix.ru/">Ensemplix info [ML]</a>
   </div>
   
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
       <li class="dropdown">
-        <a href="https://ensemplix.ru" target="_blank" class="dropdown-toggle" data-toggle="dropdown">Сайт <b class="caret"></b></a>
+        <a href="https://ensemplix.ru" target="_blank" class="dropdown-toggle" data-toggle="dropdown">РЎР°Р№С‚ <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="https://ensemplix.ru" target="_blank">Главная страница</a></li>
+          <li><a href="https://ensemplix.ru" target="_blank">Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р°</a></li>
           <li class="divider"></li>
-          <li><a href="https://ensemplix.ru/articles/view/1/" target="_blank">Правила сервера</a></li>
-          <li><a href="https://ensemplix.ru/articles/view/6/" target="_blank">Команды сервера</a></li>
-          <li><a href="https://ensemplix.ru/articles/view/3/" target="_blank">Защита территории</a></li>
+          <li><a href="https://ensemplix.ru/articles/view/1/" target="_blank">РџСЂР°РІРёР»Р° СЃРµСЂРІРµСЂР°</a></li>
+          <li><a href="https://ensemplix.ru/articles/view/6/" target="_blank">РљРѕРјР°РЅРґС‹ СЃРµСЂРІРµСЂР°</a></li>
+          <li><a href="https://ensemplix.ru/articles/view/3/" target="_blank">Р—Р°С‰РёС‚Р° С‚РµСЂСЂРёС‚РѕСЂРёРё</a></li>
           <li class="divider"></li>
-          <li><a href="https://ensemplix.ru/banlist" target="_blank">Банлист</a></li>
+          <li><a href="https://ensemplix.ru/banlist" target="_blank">Р‘Р°РЅР»РёСЃС‚</a></li>
         </ul>
       </li>
-      <li><a href="mc-color-chat.html">Цветной чат</a></li>
-      <li><a href="blacklist.html">Блеклист</a></li>
+      <li><a href="mc-color-chat.html">Р¦РІРµС‚РЅРѕР№ С‡Р°С‚</a></li>
+      <li><a href="blacklist.html">Р‘Р»РµРєР»РёСЃС‚</a></li>
     </ul>
     
   </div>
 </nav>
 
-<h2>Цветной чат</h2>
+<h2>Р¦РІРµС‚РЅРѕР№ С‡Р°С‚</h2>
 
 <div id="color_chat" class="row">
   <div class="col-md-6">
     <div class="panel panel-default">
       <div class="panel-body">
-        <textarea id="color_chat_input" class="form-control" rows="15">Давай затестим цветной текст в чате!
+        <textarea id="color_chat_input" class="form-control" rows="15">Р”Р°РІР°Р№ Р·Р°С‚РµСЃС‚РёРј С†РІРµС‚РЅРѕР№ С‚РµРєСЃС‚ РІ С‡Р°С‚Рµ!
 &0black
 &1darkblue
 &2darkgreen
@@ -97,7 +97,7 @@
     </div>
   </div>
   <div class="col-md-6">
-    <div class="output mc mc-textarea">Давай затестим!</div>
+    <div class="output mc mc-textarea">Р”Р°РІР°Р№ Р·Р°С‚РµСЃС‚РёРј!</div>
   </div>
 </div>
 
@@ -117,11 +117,11 @@ function mcChatReplacer(str, p1, p2, offset, s) {
 
 function mcChat(str) {
   return htmlEscape(str)
-    .replace(/\n/ig,"\n§f")
-    .replace(/&([0-9a-fklmnor])/ig,"§$1")
-      .replace(/§[klmnor]/ig, "") // удаление форматировочных кодов :-(
-    .replace(/§([0-9a-f])([^§]+)/ig, mcChatReplacer)
-    .replace(/§[0-9a-fklmnor]/ig, "");
+    .replace(/\n/ig,"\nВ§f")
+    .replace(/&([0-9a-fklmnor])/ig,"В§$1")
+      .replace(/В§[klmnor]/ig, "") // СѓРґР°Р»РµРЅРёРµ С„РѕСЂРјР°С‚РёСЂРѕРІРѕС‡РЅС‹С… РєРѕРґРѕРІ :-(
+    .replace(/В§([0-9a-f])([^В§]+)/ig, mcChatReplacer)
+    .replace(/В§[0-9a-fklmnor]/ig, "");
 }
 
 var el = document.querySelector("#color_chat .output");
@@ -139,17 +139,7 @@ document.addEventListener("keyup", function(e) {
   </div>
 </div>
 
-<script>
-if(location.protocol !== "file:") {
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-46473418-2', 'pavlo.cc');
-  ga('send', 'pageview');
-}
-</script>
 
 </body>
 </html>
